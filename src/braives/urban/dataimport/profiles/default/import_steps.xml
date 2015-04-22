@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+
+ <import-step
+    id="braives.urban.dataimport-braivesUrbawebImport"
+    handler="braives.urban.dataimport.importer.importBraivesUrbaweb"
+    title="Urbaweb import for Braives">
+  Urbaweb import for Braives
+ </import-step>
+
+</import-steps>

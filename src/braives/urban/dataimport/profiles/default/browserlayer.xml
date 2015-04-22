@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="braives.urban.dataimport"
+      interface="braives.urban.dataimport.interfaces.IBraivesUrbanDataimportLayer"
+  />
+</layers>

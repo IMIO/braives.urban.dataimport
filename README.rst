@@ -2,7 +2,7 @@
 braives.urban.dataimport
 ====================
 
-braives dataimport from sql acropole
+Acropole dataimport for Braives
 
 * `Source code @ GitHub <https://github.com/IMIO/braives.urban.dataimport>`_
 * `Releases @ PyPI <http://pypi.python.org/pypi/braives.urban.dataimport>`_

@@ -19,7 +19,7 @@ long_description = \
 setup(
     name='braives.urban.dataimport',
     version='0.1dev',
-    description="braives dataimport from sql acropole",
+    description="Acropole dataimport for Braives",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[

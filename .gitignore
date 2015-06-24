@@ -3,6 +3,8 @@
 *.pyo
 *.tmp*
 *.mo
+*.swp
+*.swo
 *.egg
 *.EGG
 *.egg-info

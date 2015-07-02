@@ -10,5 +10,9 @@ class IBraivesUrbanDataimportLayer(IDefaultPloneLayer):
     """Marker interface that defines a Zope 3 browser layer."""
 
 
+class IArchitectsImporter(IUrbanDataImporter):
+    """ marker interface for Braives Architects importer """
+
+
 class IBraivesDataImporter(IUrbanDataImporter):
-    """ marker interface for Thuin Agorawin importer """
+    """ marker interface for Braives acropole importer """

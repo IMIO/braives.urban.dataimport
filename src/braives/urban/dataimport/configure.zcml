@@ -39,8 +39,30 @@
 
     <adapter
         for="braives.urban.dataimport.settings.BraivesImporterSettingsForm"
-        factory=".settings.BraivesImporterFromImportSettings"
+        factory=".settings.LicencesImporterFromImportSettings"
         provides="imio.urban.dataimport.acropole.interfaces.IAcropoleDataImporter"
+        name="Braives licences"
     />
+
+    <adapter
+        for="braives.urban.dataimport.settings.BraivesImporterSettingsForm"
+        factory=".settings.ArchitectsImporterFromImportSettings"
+        provides="braives.urban.dataimport.interfaces.IArchitectsImporter"
+        name="Braives architects"
+    />
+
+    <adapter
+        for="braives.urban.dataimport.interfaces.IArchitectsImporter"
+        factory=".importer.ArchitectsMapping"
+        provides="imio.urban.dataimport.interfaces.IObjectsMapping"
+        name="objects mapping"
+        />
+
+    <adapter
+        for="braives.urban.dataimport.interfaces.IArchitectsImporter"
+        factory=".importer.ArchitectsValuesMapping"
+        provides="imio.urban.dataimport.interfaces.IValuesMapping"
+        name="values mapping"
+        />
 
 </configure>

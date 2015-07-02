@@ -49,8 +49,18 @@ class PersonTitleMapper(Mapper):
 
 class PhoneMapper(Mapper):
     def mapPhone(self, line):
-        phone = '{phone}, {gsm}'.format(
-            phone=self.getData('Téléphone'),
-            gsm=self.getData('Gsm')
-        )
-        return phone
+        phone = self.getData('Téléphone')
+        gsm = self.getData('Gsm')
+
+        if (phone and phone != '-') and (gsm and gsm != '-'):
+            phones = '{phone}, {gsm}'.format(
+                phone=phone,
+                gsm=gsm,
+            )
+            return phones
+        elif phone and phone != '-':
+            return phone
+        elif gsm and gsm != '-':
+            return gsm
+
+        return ''
